@@ -13,7 +13,7 @@ namespace ErsatzTV.Core.Scheduling;
 public class ShuffleInOrderWeightedCollectionEnumerator : IMediaCollectionEnumerator
 {
     private readonly CancellationToken _cancellationToken;
-    private readonly IList<CollectionWithItems> _collections;
+    private readonly List<CollectionWithItems> _collections;
     private readonly Lazy<Option<TimeSpan>> _lazyMinimumDuration;
     private readonly int _mediaItemCount;
     private readonly bool _randomStartPoint;
@@ -21,7 +21,7 @@ public class ShuffleInOrderWeightedCollectionEnumerator : IMediaCollectionEnumer
     private MediaItem[] _shuffled;
 
     public ShuffleInOrderWeightedCollectionEnumerator(
-        IList<CollectionWithItems> collections,
+        List<CollectionWithItems> collections,
         CollectionEnumeratorState state,
         bool randomStartPoint,
         CancellationToken cancellationToken)
@@ -109,7 +109,7 @@ public class ShuffleInOrderWeightedCollectionEnumerator : IMediaCollectionEnumer
 
     public int Count => _shuffled.Length;
 
-    private MediaItem[] BuildWeightedSequence(IList<CollectionWithItems> collections, Random random)
+    private MediaItem[] BuildWeightedSequence(List<CollectionWithItems> collections, Random random)
     {
         if (collections.Count == 0)
         {

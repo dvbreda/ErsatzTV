@@ -6,9 +6,12 @@
             args:
                 INFO_VERSION: "docker-compose-develop"
         environment:
-            TZ: America/Chicago
+            TZ: Europe/Amsterdam
+            ETV_STREAMING_PORT: "8509"
+            ETV_UI_PORT: "8510"
         ports:
-            - "8409:8409"
+            - "8509:8509"
+            - "8510:8510"
         volumes:
             - ersatztv:/config
             #- /media/shared:/media/shared:ro
