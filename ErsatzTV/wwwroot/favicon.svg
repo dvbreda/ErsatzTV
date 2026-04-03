@@ -2,71 +2,71 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #187c73;
+        fill: #7a3500;
       }
 
       .cls-2 {
-        fill: #6ee7dc;
+        fill: #ffaa44;
       }
 
       .cls-3 {
-        fill: #c2faf2;
+        fill: #ffe4b0;
       }
 
       .cls-4 {
-        fill: #128a7b;
+        fill: #843d00;
       }
 
       .cls-5 {
-        fill: #b5ce62;
+        fill: #e8a020;
       }
 
       .cls-6 {
-        fill: #95cac9;
+        fill: #ffb870;
       }
 
       .cls-7 {
-        fill: #147d72;
+        fill: #7d3800;
       }
 
       .cls-8 {
-        fill: #1cf0ea;
+        fill: #ff8800;
       }
 
       .cls-9 {
-        fill: #16baa2;
+        fill: #cc6600;
       }
 
       .cls-10 {
-        fill: #396410;
+        fill: #5a2800;
       }
 
       .cls-11 {
-        fill: #d9d02b;
+        fill: #ff9900;
       }
 
       .cls-12 {
-        fill: #9bc33f;
+        fill: #e08c00;
       }
 
       .cls-13 {
-        fill: #1db7a9;
+        fill: #d06a00;
       }
 
       .cls-14 {
-        fill: #34560f;
+        fill: #3d1a00;
       }
 
       .cls-15 {
-        fill: #1da395;
+        fill: #bf5c00;
       }
 
       .cls-16 {
-        fill: #e6e995;
+        fill: #ffd888;
       }
 
       .cls-17 {
-        fill: #528a0c;
+        fill: #994800;
       }
     </style>
   </defs>

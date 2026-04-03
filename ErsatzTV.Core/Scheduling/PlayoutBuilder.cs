@@ -1429,6 +1429,26 @@ public class PlayoutBuilder : IPlayoutBuilder
                     state,
                     cancellationToken);
 
+            case PlaybackOrder.ShuffleWeighted:
+                return new ShuffleWeightedCollectionEnumerator(
+                    await GetCollectionItemsForShuffleInOrder(
+                        _mediaCollectionRepository,
+                        collectionKey,
+                        cancellationToken),
+                    state,
+                    activeSchedule.RandomStartPoint,
+                    cancellationToken);
+
+            case PlaybackOrder.ShuffleInOrderWeighted:
+                return new ShuffleInOrderWeightedCollectionEnumerator(
+                    await GetCollectionItemsForShuffleInOrder(
+                        _mediaCollectionRepository,
+                        collectionKey,
+                        cancellationToken),
+                    state,
+                    activeSchedule.RandomStartPoint,
+                    cancellationToken);
+
             case PlaybackOrder.Marathon:
                 var helper = new MarathonHelper(_mediaCollectionRepository);
                 Option<PlaylistEnumerator> maybeEnumerator = await helper.GetEnumerator(

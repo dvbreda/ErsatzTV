@@ -62,6 +62,8 @@ public abstract class ProgramScheduleItemCommandBase
                     return BaseError.New($"Invalid playback order for multi collection: '{item.PlaybackOrder}'");
                 case PlaybackOrder.Shuffle:
                 case PlaybackOrder.ShuffleInOrder:
+                case PlaybackOrder.ShuffleWeighted:
+                case PlaybackOrder.ShuffleInOrderWeighted:
                     break;
             }
         }

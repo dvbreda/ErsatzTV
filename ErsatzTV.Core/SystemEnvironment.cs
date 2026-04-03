@@ -15,7 +15,7 @@ public class SystemEnvironment
         string uiPortVariable = Environment.GetEnvironmentVariable("ETV_UI_PORT");
         if (!int.TryParse(uiPortVariable, out int uiPort))
         {
-            uiPort = 8409;
+            uiPort = 8510;
         }
 
         UiPort = uiPort;
@@ -23,7 +23,7 @@ public class SystemEnvironment
         string streamingPortVariable = Environment.GetEnvironmentVariable("ETV_STREAMING_PORT");
         if (!int.TryParse(streamingPortVariable, out int streamingPort))
         {
-            streamingPort = 8409;
+            streamingPort = 8509;
         }
 
         StreamingPort = streamingPort;
